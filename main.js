@@ -14,8 +14,6 @@ const rl = readline.createInterface({
     output: process.stdout
 });
 
-
-
 rl.on('line', (input) => {
     if (input.match(/^new/)) {
         if (input.match(/Class\(\d{1,2}\w\)/)) {
@@ -88,6 +86,8 @@ rl.on('line', (input) => {
             tSubjectMark.update(parseInt(text[0]), parseInt(text[1]), parseInt(text[2]), parseInt(text[3]))
         }
     }
+
+
 
     if (input.match(/^show Student\(\d*\)/)) {
         let text = input.substr('show Student('.length);

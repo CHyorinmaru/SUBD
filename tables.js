@@ -37,6 +37,8 @@ class Tables {
     static createSubjectMarks() {
         connection.run(`
             CREATE TABLE SubjectMark (
+                id INTEGER NOT NULL PRIMARY KEY AUTO_INCREMENT,
+
                 mark INTEGER,
 
                 subjectId INTEGER,
